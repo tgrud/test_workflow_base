@@ -12,7 +12,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Logging Base ref
       # Trying to use github.
       - run: echo "${{ github.base_ref }}"
       - run: echo "${{ github.head_ref }}"
