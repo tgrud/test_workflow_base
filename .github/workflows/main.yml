@@ -12,9 +12,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      # Trying to use github.
+      # Trying to use github.*
       - run: echo "${{ github.base_ref }}"
       - run: echo "${{ github.head_ref }}"
-      # Trying to use github.event.pull_request.
+      # Trying to use github.event.pull_request.*
       - run: echo "${{ github.event.pull_request.base.ref }}"
       - run: echo "${{ github.event.pull_request.head.ref }}"
